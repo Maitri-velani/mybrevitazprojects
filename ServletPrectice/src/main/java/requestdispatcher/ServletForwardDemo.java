@@ -2,12 +2,14 @@ package requestdispatcher;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+@WebServlet("/forwardD")
 public class ServletForwardDemo extends HttpServlet {
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException,IOException
@@ -20,7 +22,7 @@ public class ServletForwardDemo extends HttpServlet {
 
         if(pass.equals("servlet") && name.equals("maitri"))
         {
-            RequestDispatcher rd=request.getRequestDispatcher("servlet2");
+            RequestDispatcher rd=request.getRequestDispatcher("servletforward");
             rd.forward(request, response);
             //forward method simply forward request2 to servlet2 and
             // it doesn't display servlet1's response

@@ -2,12 +2,14 @@ package requestdispatcher;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+@WebServlet("/include")
 public class ServletIncludeDemo extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException,IOException
     {
@@ -21,7 +23,7 @@ public class ServletIncludeDemo extends HttpServlet {
         {
             pw.print("See this is response");
 
-            RequestDispatcher rd=request.getRequestDispatcher("servlet2");
+            RequestDispatcher rd=request.getRequestDispatcher("includeDemo");
             rd.include(request, response);
         }
         else
@@ -31,10 +33,10 @@ public class ServletIncludeDemo extends HttpServlet {
                 rd.include(request, response);
                 //include methode add answer of servlet1 and servlet2.
         }
-    }
+    }/*
     public void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException,IOException
     {
         String name=request.getParameter("name");
         response.sendRedirect("includeDemo.html");
-    }
+    }*/
 }

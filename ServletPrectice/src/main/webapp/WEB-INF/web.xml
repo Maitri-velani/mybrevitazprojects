@@ -1,0 +1,152 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+  <display-name>Archetype Created Web Application</display-name>
+    <context-param>
+        <param-name>context</param-name>
+        <param-value>Servlet Training</param-value>
+    </context-param>
+
+    <!--<servlet>
+        <servlet-name>Hello</servlet-name>
+        <servlet-class>hello.HelloWorld</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+      <servlet-name>Hello</servlet-name>
+      <url-pattern>/hello</url-pattern>
+    </servlet-mapping>-->
+
+    <!--<servlet>
+        <servlet-name>LifeCycle</servlet-name>
+        <servlet-class>lifecycledemo.ServletLifecycle</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LifeCycle</servlet-name>
+        <url-pattern>/lifeCycle</url-pattern>
+    </servlet-mapping>-->
+
+    <!--<servlet>
+            <servlet-name>configDemo</servlet-name>
+            <servlet-class>configdemo.ConfigeDemo</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>configDemo</servlet-name>
+        <url-pattern>/config</url-pattern>
+    </servlet-mapping>-->
+
+  <!--<servlet>
+      <servlet-name>GetParam</servlet-name>
+      <servlet-class>getparameter.GetParameterDemo</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetParam</servlet-name>
+        <url-pattern>/getParam</url-pattern>
+    </servlet-mapping>-->
+
+    <!--<servlet>
+      <servlet-name>CCL</servlet-name>
+      <servlet-class>lifecyclewithCC.LifeCycleWithConfigAndContext
+    </servlet-class>
+    <init-param>
+          <param-name>init</param-name>
+          <param-value>Maitri</param-value>
+      </init-param>
+  </servlet>
+
+        <servlet-mapping>
+            <servlet-name>CCL</servlet-name>
+            <url-pattern>/CCL</url-pattern>
+        </servlet-mapping>
+-->
+
+<!--
+   <servlet>
+       <servlet-name>context</servlet-name>
+       <servlet-class>contextdemo.ContextDemo</servlet-class>
+   </servlet>
+    <servlet-mapping>
+        <servlet-name>context</servlet-name>
+        <url-pattern>/context</url-pattern>
+    </servlet-mapping>-->
+
+    <!--<servlet>
+        <servlet-name>logIn</servlet-name>
+        <servlet-class>requestdispatcher.ServletIncludeDemo</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>logIn</servlet-name>
+        <url-pattern>/include</url-pattern>
+    </servlet-mapping>-->
+
+    <!--<servlet>
+        <servlet-name>welcome</servlet-name>
+        <servlet-class>requestdispatcher.ServletIncludeDemo2</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>welcome</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
+    </servlet-mapping>-->
+
+   <!--<servlet>
+       <servlet-name>logInForward</servlet-name>
+       <servlet-class>requestdispatcher.ServletForwardDemo</servlet-class>
+   </servlet>
+
+    <servlet>
+        <servlet-name>welcomeForward</servlet-name>
+        <servlet-class>requestdispatcher.ServletForwardDemo2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>logInForward</servlet-name>
+        <url-pattern>/forwardD</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet-mapping>
+        <servlet-name>welcomeForward</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
+    </servlet-mapping>
+-->
+    <welcome-file-list>
+        <!--<welcome-file>index.html</welcome-file>-->
+        <!--<welcome-file>getIndex.html</welcome-file>-->
+        <!--<welcome-file>lifeCycle.html</welcome-file>-->
+        <!--<welcome-file>configDemo.html</welcome-file>-->
+        <!--<welcome-file>configContextLifecycle.html</welcome-file>-->
+        <!--<welcome-file>contextDemo.html</welcome-file>-->
+        <!--<welcome-file>Demo.html</welcome-file>-->
+        <welcome-file>redirectDemo.html</welcome-file>
+    </welcome-file-list>
+
+  <!--  <servlet>
+        <servlet-name>redirect</servlet-name>
+        <servlet-class>sendredirect.SendRedirectDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>redirect2</servlet-name>
+        <servlet-class>sendredirect.SendRedirectDemo2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>redirect</servlet-name>
+        <url-pattern>/include</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>redirect2</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
+    </servlet-mapping>-->
+
+</web-app>
